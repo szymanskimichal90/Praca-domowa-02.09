@@ -7,6 +7,7 @@ public class Main {
         Book php       = new Book("php", ali, Cover.HARD);
 
         // dla klasy Book zdefiniować equals, hashcode, toString (ze StringBuilder), powinna też być naturalnie sortowana po tytule
+
         ali.addBook(angular);
         ali.addBook(jee);
         ali.addBook(jee2);
@@ -30,6 +31,8 @@ public class Main {
         System.out.println(desk.getBooks());
 
         // Powinno wyrzucić wyjątek ponieważ php nie dodaliśmy do obiektu desk
+
+
         try {
             desk.removeBook(php);
         } catch (BookNotExistOnTheDesk bookNotExistOnTheDesk) {

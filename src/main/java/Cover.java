@@ -1,4 +1,15 @@
 public enum Cover {
-    SOFT,
-    HARD;
+    SOFT("miękka"),
+    HARD("twarda");
+
+
+    private String polski;
+
+    Cover(String polski) {
+        this.polski = polski;
+    }
+    public String getPolski(){
+        return polski;
+    }
+
 }
